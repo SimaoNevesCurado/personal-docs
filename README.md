@@ -2,6 +2,8 @@
 
 Personal public documentation built with [VitePress](https://vitepress.dev/).
 
+Live documentation: [docs.simaocurado.dev](https://docs.simaocurado.dev)
+
 This repository contains notes, snippets, commands and practical references I use while learning and building with Laravel, Vue and Inertia.
 
 ## Why This Exists
@@ -13,6 +15,7 @@ It is public so I can access it whenever I need it and so it may help other peop
 ## Links
 
 - Website: [simaocurado.dev](https://simaocurado.dev)
+- Documentation: [docs.simaocurado.dev](https://docs.simaocurado.dev)
 - LinkedIn: [linkedin.com/in/simaonevescurado](https://www.linkedin.com/in/simaonevescurado)
 - Repository: [github.com/SimaoNevesCurado/personal-docs](https://github.com/SimaoNevesCurado/personal-docs)
 
