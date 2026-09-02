@@ -17,6 +17,22 @@ const submit = () => {
 ```
 
 
+## Check Boxes
+
+The problem with HTML checkboxes is that when they are unchecked, the browser does not send the field at all.
+
+A simple solution is to add a hidden input before the checkbox:
+
+```vue
+
+<input type="hidden" name="finished" value="0" />
+<input name="finished" type="checkbox" value="1" />
+```
+This ensures that the server always receives a value for finished: 0 when unchecked and 1 when checked.
+
+This avoids additional normalization and simplifies validation on the server.
+
+
 ## Notes
 
 - Validation stays in Laravel.

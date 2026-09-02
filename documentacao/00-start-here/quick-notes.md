@@ -8,15 +8,6 @@ I made this documentation public so I can access it whenever I need it, and also
 
 ## Quick Entry Points
 
-- [Snippets](/00-start-here/snippets)
-- [Laravel](/01-laravel/)
+- [Laravel](/01-laravel/best-practices)
 - [Vue](/02-vue/)
 - [Inertia](/03-inertia/)
-
-## Inbox
-
-Use this section as a temporary place for notes before moving them into the right section.
-
-- [ ] New note
-- [ ] Command to save
-- [ ] Technical decision

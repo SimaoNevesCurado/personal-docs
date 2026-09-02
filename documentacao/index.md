@@ -49,8 +49,7 @@ It is public so I can access it whenever I need it, and so it may help people wh
 
 ## #docs
 
-- [Laravel](/01-laravel/)
+- [Laravel](/01-laravel/best-practices)
 - [Vue](/02-vue/)
 - [Inertia](/03-inertia/)
 - [Workflows](/04-workflows/)
-- [Snippets syntax](/00-start-here/vitepress-code-groups)

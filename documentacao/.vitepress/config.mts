@@ -29,18 +29,27 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Quick Notes', link: '/00-start-here/quick-notes' },
-              { text: 'Snippets', link: '/00-start-here/snippets' },
-              { text: 'VitePress Code Groups', link: '/00-start-here/vitepress-code-groups' }
             ]
           },
           {
             text: 'Laravel',
             collapsed: true,
             items: [
-              { text: 'Overview', link: '/01-laravel/' },
-              { text: 'Commands', link: '/01-laravel/commands' },
+              { text: 'Best Practices', link: '/01-laravel/best-practices' },
+              { text: 'Controllers', link: '/01-laravel/controllers' },
+              { text: 'Actions', link: '/01-laravel/actions' },
+              { text: 'Routes', link: '/01-laravel/routes' },
+              { text: 'Form Requests', link: '/01-laravel/form-requests' },
+              { text: 'Models', link: '/01-laravel/models' },
+              { text: 'Upload Files', link: '/01-laravel/file-uploads' },
               { text: 'Eloquent', link: '/01-laravel/eloquent' },
-              { text: 'Best Practices', link: '/01-laravel/best-practices' }
+              { text: 'Handling Errors', link: '/01-laravel/error-handle' },
+              { text: 'Queues/Jobs', link: '/01-laravel/queues' },
+              { text: 'Mail Notifications', link: '/01-laravel/mail-notifications' },
+
+              { text: 'Testing', link: '/01-laravel/testing' },
+              { text: 'Commands', link: '/01-laravel/commands' },
+              { text: 'Tools', link: '/01-laravel/tools' },
             ]
           },
           {
@@ -49,7 +58,8 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/02-vue/' },
               { text: 'Components', link: '/02-vue/components' },
-              { text: 'Composables', link: '/02-vue/composables' }
+              { text: 'Composables', link: '/02-vue/composables' },
+              { text: 'Modals', link: '/02-vue/modals' }
             ]
           },
           {
@@ -121,7 +131,8 @@ export default defineConfig({
             items: [
               { text: 'Visão Geral', link: '/pt/02-vue/' },
               { text: 'Componentes', link: '/pt/02-vue/componentes' },
-              { text: 'Composables', link: '/pt/02-vue/composables' }
+              { text: 'Composables', link: '/pt/02-vue/composables' },
+              { text: 'Modais', link: '/pt/02-vue/modals' }
             ]
           },
           {
