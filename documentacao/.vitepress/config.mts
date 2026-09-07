@@ -46,10 +46,13 @@ export default defineConfig({
               { text: 'Handling Errors', link: '/01-laravel/error-handle' },
               { text: 'Queues/Jobs', link: '/01-laravel/queues' },
               { text: 'Mail Notifications', link: '/01-laravel/mail-notifications' },
+              { text: 'Page Metadata', link: '/01-laravel/metadata' },
+
 
               { text: 'Testing', link: '/01-laravel/testing' },
               { text: 'Commands', link: '/01-laravel/commands' },
               { text: 'Tools', link: '/01-laravel/tools' },
+
             ]
           },
           {
