@@ -71,6 +71,7 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/03-inertia/' },
               { text: 'Forms', link: '/03-inertia/forms' },
+              { text: 'Create/Update Form Modal', link: '/03-inertia/form-modals' },
               { text: 'Pages and Props', link: '/03-inertia/pages-props' }
             ]
           },

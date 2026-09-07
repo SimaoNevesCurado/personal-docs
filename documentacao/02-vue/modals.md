@@ -11,7 +11,7 @@ The usual modal flow is:
 - Parent stores whether the modal is open.
 - Parent passes `open` to the modal.
 - Modal renders when `open` is true.
-- Modal emits `close` when the user clicks cancel, backdrop, escape or close button.
+- Modal emits `close` when the user clicks cancel, the backdrop, the close button, or presses Escape when the modal primitive supports it.
 - Parent decides what happens next.
 
 ## Basic Modal
@@ -59,8 +59,13 @@ const emit = defineEmits<{
 
 <template>
   <div v-if="open" class="modal-backdrop" @click.self="emit('close')">
-    <section class="modal-panel" role="dialog" aria-modal="true">
-      <h2>Delete post?</h2>
+    <section
+      class="modal-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="delete-post-title"
+    >
+      <h2 id="delete-post-title">Delete post?</h2>
       <p>This action cannot be undone.</p>
 
       <div class="modal-actions">
@@ -128,54 +133,6 @@ const {
   />
 </template>
 ```
-```vue [DeletePostModal.vue]
-<script setup lang="ts">
-import { X } from 'lucide-vue-next'
-
-defineProps<{
-  open: boolean
-  status?: string
-  canResetPassword: boolean
-}>()
-
-const emit = defineEmits<{
-  close: []
-}>()
-</script>
-
-<template>
-  <div v-if="open" class="modal-backdrop" @click.self="emit('close')">
-    <section class="modal-panel" role="dialog" aria-modal="true">
-      <header class="flex items-center justify-between gap-4">
-        <div>
-          <h2>Login</h2>
-          <p v-if="status">{{ status }}</p>
-        </div>
-
-        <button
-          type="button"
-          class="border border-black p-1 transition hover:bg-red-100"
-          aria-label="Close login modal"
-          @click="emit('close')"
-        >
-          <X class="h-4 w-4" />
-        </button>
-      </header>
-
-      <form>
-        <!-- login fields -->
-      </form>
-
-      <a v-if="canResetPassword" href="/forgot-password">
-        Forgot password?
-      </a>
-    </section>
-  </div>
-</template>
-
-```
-
-
 :::
 
 This keeps repeated modal state out of the component.
@@ -199,6 +156,7 @@ This keeps the modal reusable. It does not need to know how posts are deleted.
 
 - Keep the modal controlled by props and emits.
 - Use `@click.self` if clicking the backdrop should close the modal.
-- Use `role="dialog"` and `aria-modal="true"` for accessibility.
+- Use a tested base dialog that manages focus, Escape, an accessible name, scroll locking, and focus restoration. ARIA attributes alone are not enough.
 - Do not put large business flows inside the modal component.
 - If a modal has too many props or actions, it may need to be split into smaller components.
+- To reuse one form modal for both operations, see [Create And Update With One Modal](/03-inertia/form-modals).

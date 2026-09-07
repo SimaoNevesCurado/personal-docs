@@ -38,3 +38,4 @@ This avoids additional normalization and simplifies validation on the server.
 - Validation stays in Laravel.
 - Errors automatically return to the form.
 - Use `processing` to block double submits.
+- For a complete example that shares one form between create and update, see [Create And Update With One Modal](/03-inertia/form-modals).
