@@ -11,7 +11,7 @@ layout: home
         Personal documentation for learning in the AI era. Commands, concepts, snippets and decisions I want to keep close.
       </p>
       <div class="portfolio-actions">
-        <a href="/00-start-here/snippets">Open docs ↔</a>
+        <a href="/00-start-here/quick-notes">Open docs ↔</a>
         <a href="https://simaocurado.dev" target="_blank" rel="noreferrer">Portfolio ↗</a>
       </div>
     </div>
@@ -26,7 +26,7 @@ layout: home
       <div class="portfolio-dots"></div>
       <div class="portfolio-caption">
         <strong>Building docs</strong>
-        Laravel, Vue, Inertia and practical workflows
+        Development, Linux and DevOps notes
       </div>
     </div>
   </section>
@@ -49,7 +49,10 @@ It is public so I can access it whenever I need it, and so it may help people wh
 
 ## #docs
 
-- [Laravel](/01-laravel/best-practices)
-- [Vue](/02-vue/)
-- [Inertia](/03-inertia/)
-- [Workflows](/04-workflows/)
+- [Laravel](/development/01-laravel/best-practices)
+- [Vue](/development/02-vue/)
+- [Inertia](/development/03-inertia/)
+- [Workflows](/development/04-workflows/)
+- [Rust](/development/05-rust/)
+- [Linux commands](/linux/commands)
+- [DevOps / DevSecOps](/devops-devsecops/)

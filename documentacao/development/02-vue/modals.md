@@ -159,4 +159,4 @@ This keeps the modal reusable. It does not need to know how posts are deleted.
 - Use a tested base dialog that manages focus, Escape, an accessible name, scroll locking, and focus restoration. ARIA attributes alone are not enough.
 - Do not put large business flows inside the modal component.
 - If a modal has too many props or actions, it may need to be split into smaller components.
-- To reuse one form modal for both operations, see [Create And Update With One Modal](/03-inertia/form-modals).
+- To reuse one form modal for both operations, see [Create And Update With One Modal](/development/03-inertia/form-modals).

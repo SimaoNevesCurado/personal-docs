@@ -8,6 +8,6 @@ I made this documentation public so I can access it whenever I need it, and also
 
 ## Quick Entry Points
 
-- [Laravel](/01-laravel/best-practices)
-- [Vue](/02-vue/)
-- [Inertia](/03-inertia/)
+- [Laravel](/development/01-laravel/best-practices)
+- [Vue](/development/02-vue/)
+- [Inertia](/development/03-inertia/)

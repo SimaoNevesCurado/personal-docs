@@ -9,9 +9,9 @@ Coloquei esta documentação pública para poder aceder quando precisar e també
 ## Entradas Rápidas
 
 - [Snippets](/pt/00-inicio/snippets)
-- [Laravel](/pt/01-laravel/)
-- [Vue](/pt/02-vue/)
-- [Inertia](/pt/03-inertia/)
+- [Laravel](/pt/development/01-laravel/)
+- [Vue](/pt/development/02-vue/)
+- [Inertia](/pt/development/03-inertia/)
 
 ## Caixa de Entrada
 

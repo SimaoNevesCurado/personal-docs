@@ -286,7 +286,7 @@ Do not emit `close` immediately after calling `submit()`. Wait for `onSuccess`, 
 
 ## Related
 
-- [Inertia Forms](/03-inertia/forms)
-- [Vue Modals](/02-vue/modals)
-- [Vue Components](/02-vue/components)
-- [Laravel Form Requests](/01-laravel/form-requests)
+- [Inertia Forms](/development/03-inertia/forms)
+- [Vue Modals](/development/02-vue/modals)
+- [Vue Components](/development/02-vue/components)
+- [Laravel Form Requests](/development/01-laravel/form-requests)

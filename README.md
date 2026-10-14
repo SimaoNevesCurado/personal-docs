@@ -4,7 +4,7 @@ Personal public documentation built with [VitePress](https://vitepress.dev/).
 
 Live documentation: [docs.simaocurado.dev](https://docs.simaocurado.dev)
 
-This repository contains notes, snippets, commands and practical references I use while learning and building with Laravel, Vue and Inertia.
+This repository contains notes, snippets, commands and practical references for development, Linux, DevOps and DevSecOps.
 
 ## Why This Exists
 
@@ -50,14 +50,19 @@ npm run docs:preview
 ```txt
 documentacao/
   00-start-here/
-  01-laravel/
-  02-vue/
-  03-inertia/
-  04-workflows/
-  pt/
+  development/
+    01-laravel/
+    02-vue/
+    03-inertia/
+    04-workflows/
+    05-rust/
+  linux/
+  devops-devsecops/
+  pt/                  # Portuguese mirrors this structure
 ```
 
 English is the default language. Portuguese content lives under `/pt/`.
+Pages moved into `development/` have redirects from their previous URLs.
 
 ## License
 

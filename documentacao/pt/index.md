@@ -26,7 +26,7 @@ layout: home
       <div class="portfolio-dots"></div>
       <div class="portfolio-caption">
         <strong>Building docs</strong>
-        Laravel, Vue, Inertia e workflows práticos
+        Notas de desenvolvimento, Linux e DevOps
       </div>
     </div>
   </section>
@@ -49,8 +49,11 @@ Está pública para eu poder aceder quando precisar e para talvez ajudar pessoas
 
 ## #docs
 
-- [Laravel](/pt/01-laravel/)
-- [Vue](/pt/02-vue/)
-- [Inertia](/pt/03-inertia/)
-- [Workflows](/pt/04-workflows/)
+- [Laravel](/pt/development/01-laravel/)
+- [Vue](/pt/development/02-vue/)
+- [Inertia](/pt/development/03-inertia/)
+- [Workflows](/pt/development/04-workflows/)
+- [Rust](/pt/development/05-rust/)
+- [Comandos Linux](/pt/linux/comandos)
+- [DevOps / DevSecOps](/pt/devops-devsecops/)
 - [Sintaxe snippets](/pt/00-inicio/vitepress-code-groups)
