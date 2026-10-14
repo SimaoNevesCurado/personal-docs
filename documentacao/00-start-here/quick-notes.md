@@ -43,7 +43,7 @@ services:
       - 'storage-data:/app/storage'
 
     networks:
-      - default
+        - default
       - coolify
       - proxy
 

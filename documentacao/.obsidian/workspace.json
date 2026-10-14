@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops-devsecops/index.md",
+                "file": "pt/development/01-laravel/boas-praticas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "boas-praticas"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops-devsecops/index.md",
+                "file": "pt/development/01-laravel/boas-praticas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops-devsecops/index.md",
+                "file": "pt/development/01-laravel/boas-praticas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops-devsecops/index.md",
+                "file": "pt/development/01-laravel/boas-praticas.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,8 +188,9 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "7a489bc482b4d4e0",
+  "active": "7f486ecd877cbcf8",
   "lastOpenFiles": [
+    "devops-devsecops/index.md",
     "pt/development/05-rust/index.md",
     "pt/development/05-rust",
     "development/05-rust/index.md",
