@@ -33,6 +33,8 @@ Run the local docs server:
 npm run docs:dev
 ```
 
+Open [http://127.0.0.1:5174/](http://127.0.0.1:5174/) in your browser.
+
 Build the site:
 
 ```bash
