@@ -38,6 +38,7 @@ export default defineConfig({
               { text: 'Best Practices', link: '/01-laravel/best-practices' },
               { text: 'Controllers', link: '/01-laravel/controllers' },
               { text: 'Actions', link: '/01-laravel/actions' },
+              { text: 'External APIs', link: '/01-laravel/http-client' },
               { text: 'Routes', link: '/01-laravel/routes' },
               { text: 'Form Requests', link: '/01-laravel/form-requests' },
               { text: 'Models', link: '/01-laravel/models' },
@@ -126,7 +127,8 @@ export default defineConfig({
               { text: 'Visão Geral', link: '/pt/01-laravel/' },
               { text: 'Comandos', link: '/pt/01-laravel/comandos' },
               { text: 'Eloquent', link: '/pt/01-laravel/eloquent' },
-              { text: 'Boas Práticas', link: '/pt/01-laravel/boas-praticas' }
+              { text: 'Boas Práticas', link: '/pt/01-laravel/boas-praticas' },
+              { text: 'APIs Externas', link: '/pt/01-laravel/cliente-http' }
             ]
           },
           {
