@@ -264,8 +264,9 @@ For APIs, I prefer using Eloquent API Resources instead of returning models dire
 
 ```php
 return PostResource::collection($posts);
+```
 
-
+```yaml
 version: 8
 groups:
   - id: aaa9e465-c0cd-470b-95ee-625f3a0a3faa
@@ -705,8 +706,5 @@ showProfileTree: true
 profileBlacklist:
   - local:binbash
 ```
-
-
-
 
 If the API is expected to evolve, I also prefer versioning it early instead of waiting until breaking changes are harder to manage.
