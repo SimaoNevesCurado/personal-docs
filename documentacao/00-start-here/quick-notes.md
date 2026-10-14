@@ -14,6 +14,127 @@ I made this documentation public so I can access it whenever I need it, and also
 
 
 
+```yaml
+
+services:
+  systemsaudit-app:
+    container_name: systemsaudit-app
+    image: 'registry.seeinformatica.pt/systemsaudit/app:production'
+    restart: unless-stopped
+    environment:
+      APP_ENV: production
+      APP_DEBUG: 'false'
+      APP_KEY: '${APP_KEY}'
+      APP_URL: '${APP_URL}'
+
+      DB_CONNECTION: pgsql
+      DB_HOST: '${DB_HOST}'
+      DB_PORT: '${DB_PORT:-5432}'
+      DB_DATABASE: '${DB_DATABASE}'
+      DB_USERNAME: '${DB_USERNAME}'
+      DB_PASSWORD: '${DB_PASSWORD}'
+
+      CACHE_STORE: redis
+      SESSION_DRIVER: redis
+      QUEUE_CONNECTION: redis
+      REDIS_HOST: systemsaudit-redis
+      REDIS_PORT: 6379
+
+    volumes:
+      - 'storage-data:/app/storage'
+
+    depends_on:
+      systemsaudit-redis:
+        condition: service_healthy
+
+    networks:
+      - default
+      - proxy
+      - coolify
+
+  systemsaudit-worker:
+    container_name: systemsaudit-worker
+    image: 'registry.seeinformatica.pt/systemsaudit/app:production'
+    restart: unless-stopped
+    working_dir: /app
+
+    entrypoint:
+      - php
+
+    command:
+      - artisan
+      - 'queue:work'
+      - '--queue=default'
+      - '--sleep=3'
+      - '--tries=3'
+      - '--timeout=90'
+      - '--no-interaction'
+
+    environment:
+      APP_ENV: production
+      APP_DEBUG: 'false'
+      APP_KEY: '${APP_KEY}'
+      APP_URL: '${APP_URL}'
+
+      DB_CONNECTION: pgsql
+      DB_HOST: '${DB_HOST}'
+      DB_PORT: '${DB_PORT:-5432}'
+      DB_DATABASE: '${DB_DATABASE}'
+      DB_USERNAME: '${DB_USERNAME}'
+      DB_PASSWORD: '${DB_PASSWORD}'
+
+      CACHE_STORE: redis
+      SESSION_DRIVER: redis
+      QUEUE_CONNECTION: redis
+      REDIS_HOST: systemsaudit-redis
+      REDIS_PORT: 6379
+
+    volumes:
+      - 'storage-data:/app/storage'
+
+    depends_on:
+      systemsaudit-redis:
+        condition: service_healthy
+
+    networks:
+      - default
+
+  systemsaudit-redis:
+    container_name: systemsaudit-redis
+    image: 'redis:7-alpine'
+    restart: unless-stopped
+
+    command:
+      - redis-server
+      - '--appendonly'
+      - 'yes'
+    volumes:
+      - 'redis-data:/data'
+
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+    networks:
+      - default
+
+volumes:
+  storage-data: null
+  redis-data: null
+
+networks:
+  proxy:
+    external: true
+
+  coolify:
+    external: true
+
+
 ```
 
 supply
@@ -43,7 +164,7 @@ services:
       - 'storage-data:/app/storage'
 
     networks:
-        - default
+      - default
       - coolify
       - proxy
 
